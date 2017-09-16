@@ -12,19 +12,11 @@ class Triangle
   end
 
   def isosceles?
-    if self.side_1 == self.side_2 || self.side_1 == self.side_3 || self.side_2 == self.side_3
-      return true
-    else
-      return false
-    end
+    self.side_1 == self.side_2 || self.side_1 == self.side_3 || self.side_2 == self.side_3
   end
 
   def scalene?
-    if self.side_1 != self.side_2 && self.side_1 != self.side_3 && self.side_2 != self.side_3
-      return true
-    else
-      return false
-    end
+    self.side_1 != self.side_2 && self.side_1 != self.side_3 && self.side_2 != self.side_3
   end
 
   def has_size?
