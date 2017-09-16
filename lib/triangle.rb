@@ -8,11 +8,7 @@ class Triangle
   end
 
   def equilateral?
-    if self.side_1 == self.side_2 && self.side_2 == self.side_3
-      return true
-    else
-      false
-    end
+    self.side_1 == self.side_2 && self.side_2 == self.side_3
   end
 
   def isosceles?
